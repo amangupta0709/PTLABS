@@ -2,7 +2,11 @@
 
 Links to different badges notes
 
-[Unix Badge](PTLABS/unix/notes.md)
+[Unix Badge](unix/notes.md)
+
+[Essential Badge](essential/notes.md)
+
+[White badge](white/notes.md)
 
 
 
