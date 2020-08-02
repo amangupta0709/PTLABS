@@ -6,7 +6,7 @@ Links to different badges notes
 
 [Essential Badge](essential/notes.md)
 
-[White badge](white/notes.md)
+[White badge](white/README.md)
 
 
 
