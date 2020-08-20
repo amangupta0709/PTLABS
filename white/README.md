@@ -6,3 +6,11 @@
 
 [JWT None Vulnerability](jwt.md)
 
+[CVE-2007-1860/Tomcat mod_jk](tomcat.md)
+
+[Pickle code execution](serialization.md)
+
+[Electronic Code Book Encryption](ECB.md)
+
+
+

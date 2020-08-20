@@ -6,12 +6,14 @@
 
   1. Session web tokens
 2. JSON web tokens (JWT)
-  
+
   The problen with session web tokens is that there is one session id which is sent by the client to the server and then the server use it to validate the details of the client using that session id.
-  
+
 BUT what if the database get lost then all the session will expire or if the web server is dynamic which create the same issue.
-  
+
 Then comes the JWT which includes user data as well as signature by the server so that server dont need to store session id in database. they can just look at user's signed data and validate it.
+
+[Python Code Script](jwt_none_vuln.py)
 
 ### Structure of JWT
 
