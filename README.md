@@ -10,6 +10,8 @@ Links to different badges notes
 
 [Serialize badge](serialize/README.md)
 
+[Intercept Badge](intercept/notes.md)
+
 
 
 

