@@ -14,5 +14,5 @@ Links to different badges notes
 
 [Yellow Badge](yellow/README.md)
 
-
+[Blue Badge](blue/README.md)
 

@@ -24,7 +24,7 @@ decoded = bytearray(base64.b64decode(cookie))
 required_value = (decoded[0] ^ ord('b')) ^ ord('a')
 decoded[0] = required_value
 
-new_cookie = base64.b64encode(bytes(decoded))
+new_cookie = base64.b64encode(bytes(decoded)).decode('utf-8')
 
 session.cookies['auth'] = requests.utils.quote(new_cookie)
 
